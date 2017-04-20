@@ -195,10 +195,11 @@
 								</div>
 								<div class=\"truck-comment\">
 									<h3>Comment:</h3>
-									<textarea name=\"comment\" rows=\"10\" cols=\"100\">".$prevComment."</textarea>
+									<textarea name=\"comment\" rows=\"5\" cols=\"100\">".$prevComment."</textarea>
 								</div>
 							</form>
-						</div>";
+						</div>
+						<button type =\"submit\">Submit</button>";
 					}
 				?>
 			</div>
@@ -282,3 +283,4 @@
    Status Box/Wall -->
 </body>
 </html>
+
