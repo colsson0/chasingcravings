@@ -75,7 +75,7 @@ header, section, footer, aside, nav, article, hgroup{
 	width: 400px;
 	margin-top: 20px;
 	text-align: center;
-	padding-left: 0%; /*Need to center myaccount table*/
+	padding-left: 0%; /*Needed to center myaccount table*/
 }
 #truck-wrapper{
 	width: 95%;
@@ -147,8 +147,47 @@ header, section, footer, aside, nav, article, hgroup{
 	text-align: left;
 	width: 100%;
 }
-.truck-reviews{
+.truck-reviews{ /*No code because its all inherited. Could change later so left the brackets*/
 	
+}
+#food-trucks-wrapper{
+	margin-top: 2%;
+	width: 95%;
+	-webkit-box-pack: center;
+}
+.food-truck{
+	border: 1px solid black;
+	width: 24%;
+	margin: .2%;
+	float: left;
+	text-align: left;
+	display: block;
+	position: relative;
+}
+.food-truck .img{
+	float: left;
+	width: 20%;
+	display: block;
+}
+#food-truck-info-wrapper{
+	width: 80%;
+	height: 100%;
+	display: block;
+	float: right;
+}
+.food-truck .name{
+	width: 100%;
+	height: 50%;
+	float: left;
+	display: block;
+	margin: .2%;
+}
+.food-truck .rating{
+	width: 100%;
+	height: 50%;
+	float: left;
+	display: block;
+	margin: .2%;
 }
 table{
 	border-collapse: collapse;

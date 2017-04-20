@@ -94,6 +94,7 @@
 			</form>
 		<?php echo $specialMessage; ?>
 		</div>
+		<br><p><a href="forgotpassword.php">Forgot Password</a></p>
 	</div>
 </body>
 </html>	
