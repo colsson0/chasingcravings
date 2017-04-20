@@ -4,12 +4,20 @@ CREATE TABLE useraccounts(
 userID		INT PRIMARY KEY,
 username	VARCHAR(20) NOT NULL UNIQUE,
 email		VARCHAR(50) NOT NULL UNIQUE, 
+<<<<<<< HEAD
 pwd			VARCHAR(50) NOT NULL,
+=======
+pwd		VARCHAR(50) NOT NULL,
+>>>>>>> refs/remotes/colsson0/master
 acctType	VARCHAR(5) NOT NULL);
 
 CREATE TABLE trucks(
 truckID		INT PRIMARY KEY,
+<<<<<<< HEAD
 truckName	VARCHAR(50) NOT NULL UNIQUE,
+=======
+truckName	VARCHAR(50) NOT NULL,
+>>>>>>> refs/remotes/colsson0/master
 userID		INT NOT NULL,
 cuisine		VARCHAR(50) NOT NULL,
 hours		VARCHAR(100),
