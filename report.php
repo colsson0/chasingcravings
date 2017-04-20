@@ -1,37 +1,69 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+	<?php include "headInfo.php";?>
+	<?php include "desktopheader.php";?>
+</head>
 <body>
-
-<h1>Report An Issue</h1>
-
-<form action = "Report.php">
-
-   <div class = "container">
-     <label for = "firstname"><b>First Name</b></label>
-     <input type = "text" id="First Name" name ="firstname" placeholder = "Enter first name">
-
-     <label for = "lastname"><b>Last Name</b></label>
-     <input type = "text" id="Last Name" name ="lastname" placeholder = "Enter last name">
-    
-    
-     <label for = "email"><b>Email</b></label>
-     <input type = "text" id="email" name ="email" placeholder = "Enter email address">
-     
-     <label for = "issues"><b>Issue</b></label>
-     <select id="issues" name ="issues">
-         <option value = "inappropriate">Inappropriate Behavior</option>
-         <option value = "wrongaddress">Address Was Incorrect</option>
-         <option value = "nonexistent">Truck No Longer Exists</option>
-         <option value = "siteerror">Issue With Website</option>
-     </select>
-    
-    <label for = "report"><b>Report Issue</b></label>
-     <text area id="report" name ="report" placeholder = "Please write about issue here..."
-     style = "height: 300px"></textarea>
-     <button type = "submit">Submit</button>
- </div>
-</form>
-
+	<div id="page-wrapper">
+		<h1>Report An Issue</h1>
+		<div class="form-wrapper-account">
+			<form method="report" action = "report.php">
+				<table border=0>
+					<div class = "container">
+						<tr>
+							<!-- Do we even need a username? -->
+							<td>
+								<label><b>Username</b></label>
+							</td>
+							<td>
+								<input type = "text" name ="username" placeholder = "Enter Username">
+							</td>
+						</tr>
+					</div>
+					<div class="container">
+						<tr>
+							<td>
+								<label><b>Email</b></label>
+							</td>
+							<td>
+								<input type = "email"  name ="email" placeholder = "Enter Email" maxlength="50">
+							</td>
+						</tr>
+					</div>
+					<div class="container">
+						<tr>
+							<td>
+								<label><b>Issue</b></label>
+							</td>
+							<td>
+								<select id="issues" name ="issues">
+									<option value = "inappropriate">Inappropriate Behavior</option>
+									<option value = "wrongaddress">Address Was Incorrect</option>
+									<option value = "nonexistent">Truck No Longer Exists</option>
+									<option value = "siteerror">Issue With Website</option>
+								</select>
+							</td>
+						</tr>
+					</div>
+					<div class="container">
+						<tr>
+							<td>
+								<label><b>Comments</b></label>
+							</td>
+							<td>
+							</td>
+						</tr>
+					</div>
+				</table>
+				<div class="container">
+					<textarea name="comments" rows="5" cols="54" placeholder="Describe the issue."></textarea>
+				</div>
+				<div class="container">
+					<button type = "submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
