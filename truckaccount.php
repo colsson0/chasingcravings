@@ -129,125 +129,129 @@
 				return $data;
 			}
 		?>
-		<h3>Truck Information</h3>
-		<form method="post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-			<table border=0>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Truck Name</b></label>
-						</td>
-						<td>
-							<input type = "text" value="<?php echo $newTruckName;?>" name ="truckName" maxlength="50">
-							<span class="error"><?php echo $truckNameErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Cuisine</b></label>
-						</td>
-						<td>
-							<input type="text" value="<?php echo $newCuisine;?>" name="cuisine" maxlength="50">
-							<span class="error"><?php echo $cuisineErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Hours</b></label>
-						</td>
-						<td>
-							<input type="text" value="<?php echo $newHours;?>" name="hours" maxlength="100">
-							<span class="error"><?php echo $hoursErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Truck URL</b></label>
-						</td>
-						<td>
-							<input type="text" value="<?php echo $newTruckURL;?>" name="truckURL" maxlength="100">
-							<span class="error"><?php echo $truckURLErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Picture URL</b></label>
-						</td>
-						<td>
-							<input type="text" value="<?php echo $newPictureURL;?>" name="pictureURL" maxlength="100">
-							<span class="error"><?php echo $cuisineErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Serves Breakfast</b></label>
-						</td>
-						<td>
-							<input type="checkbox" value="servesBreakfast" name="servesBreakfast" <?php echo $newServesBreakfast;?>>
-							<span class="error"><?php echo $servesBreakfastErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Serves Lunch</b></label>
-						</td>
-						<td>
-							<input type="checkbox" value="servesLunch" name="servesLunch" <?php echo $newServesLunch;?>>
-							<span class="error"><?php echo $servesLunchErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Serves Dinner</b></label>
-						</td>
-						<td>
-							<input type="checkbox" value="servesDinner" name="servesDinner" <?php echo $newServesDinner;?>>
-							<span class="error"><?php echo $servesDinnerErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Truck Latitude</b></label>
-						</td>
-						<td>
-							<input type="number" value="<?php if($truckExists){echo number_format($newTruckLat, 5);}?>" name="truckLat" step="any">
-							<span class="error"><?php echo $truckLatErr;?></span>
-						</td>
-					</tr>
-				</div>
-				<div class="container">
-					<tr>
-						<td>
-							<label><b>Truck Longitude</b></label>
-						</td>
-						<td>
-							<input type="number" value="<?php if($truckExists){echo number_format($newTruckLong, 5);}?>" name="truckLong" step="any">
-							<span class="error"><?php echo $truckLongErr;?></span>
-						</td>
-					</tr>
-				</div>
-			</table>
-			<div class="container">
-				<button type ="submit">Save Changes</button>
+		<div id="page-wrapper">
+			<h1>Truck Information</h1>
+			<div class="form-wrapper">
+				<form method="post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+					<table border=0>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Truck Name</b></label>
+								</td>
+								<td>
+									<input type = "text" value="<?php echo $newTruckName;?>" name ="truckName" maxlength="50">
+									<span class="error"><?php echo $truckNameErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Cuisine</b></label>
+								</td>
+								<td>
+									<input type="text" value="<?php echo $newCuisine;?>" name="cuisine" maxlength="50">
+									<span class="error"><?php echo $cuisineErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Hours</b></label>
+								</td>
+								<td>
+									<input type="text" value="<?php echo $newHours;?>" name="hours" maxlength="100">
+									<span class="error"><?php echo $hoursErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Truck URL</b></label>
+								</td>
+								<td>
+									<input type="text" value="<?php echo $newTruckURL;?>" name="truckURL" maxlength="100">
+									<span class="error"><?php echo $truckURLErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Picture URL</b></label>
+								</td>
+								<td>
+									<input type="text" value="<?php echo $newPictureURL;?>" name="pictureURL" maxlength="100">
+									<span class="error"><?php echo $cuisineErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Serves Breakfast</b></label>
+								</td>
+								<td>
+									<input type="checkbox" value="servesBreakfast" name="servesBreakfast" <?php echo $newServesBreakfast;?>>
+									<span class="error"><?php echo $servesBreakfastErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Serves Lunch</b></label>
+								</td>
+								<td>
+									<input type="checkbox" value="servesLunch" name="servesLunch" <?php echo $newServesLunch;?>>
+									<span class="error"><?php echo $servesLunchErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Serves Dinner</b></label>
+								</td>
+								<td>
+									<input type="checkbox" value="servesDinner" name="servesDinner" <?php echo $newServesDinner;?>>
+									<span class="error"><?php echo $servesDinnerErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Truck Latitude</b></label>
+								</td>
+								<td>
+									<input type="number" value="<?php if($truckExists){echo number_format($newTruckLat, 5);}?>" name="truckLat" step="any">
+									<span class="error"><?php echo $truckLatErr;?></span>
+								</td>
+							</tr>
+						</div>
+						<div class="container">
+							<tr>
+								<td>
+									<label><b>Truck Longitude</b></label>
+								</td>
+								<td>
+									<input type="number" value="<?php if($truckExists){echo number_format($newTruckLong, 5);}?>" name="truckLong" step="any">
+									<span class="error"><?php echo $truckLongErr;?></span>
+								</td>
+							</tr>
+						</div>
+					</table>
+					<div class="container">
+						<button type ="submit">Save Changes</button>
+					</div>
+				</form>
 			</div>
-		</form>
-		<br><p><?php echo $specialMessage;?></p>
-		<br><p><a href="myaccount.php">Return to Account</a></p>
+			<br><p><?php echo $specialMessage;?></p>
+			<br><p><a href="myaccount.php">Return to Account</a></p> <!-- Left here until I write the php to create the aside menu. (only show truck account link if the account is a truck account) -->
+		</div>
 	</body>
 </html>	
