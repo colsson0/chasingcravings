@@ -120,7 +120,7 @@
 			<nav id="nav-menu" role="navigation">
 				<ul>
 					<li class="active"><a href="myaccount.php">Manage Account</a></li>
-					<li><a href="favorites.php">Favorites</a></li>
+					<li><a href="favorites.php?remove=">Favorites</a></li>
 				</ul>
 			</nav>
 		</aside>
