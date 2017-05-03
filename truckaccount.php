@@ -130,6 +130,15 @@
 			}
 		?>
 		<div id="page-wrapper">
+		<aside id="nav-aside" role="complementary">
+			<nav id="nav-menu" role="navigation">
+			<ul>
+					<li><a href="myaccount.php">Manage Account</a></li>
+					<li class="active"><a href=\"truckaccount.php\">Go to Truck Account</a></li>
+					<li><a href="favorites.php?remove=">Favorites</a></li>
+				</ul>
+			</nav>
+		</aside>
 			<h1>Truck Information</h1>
 			<div class="form-wrapper">
 				<form method="post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
@@ -251,7 +260,7 @@
 				</form>
 			</div>
 			<br><p><?php echo $specialMessage;?></p>
-			<br><p><a href="myaccount.php">Return to Account</a></p> <!-- Left here until I write the php to create the aside menu. (only show truck account link if the account is a truck account) -->
 		</div>
 	</body>
 </html>	
+
