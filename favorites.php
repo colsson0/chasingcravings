@@ -35,13 +35,33 @@
 				// Generate the html code to display information
 				else 
 				{ 
-					echo "<h1Favorites</h1>
-					<table border = \"1\">
-					<tr>
-						<th></th>
-						<th>Truck Name</th>
-						<th></th>
-					</tr>";
+					//not working
+					//$row = mysqli_fetch_assoc($result);
+					//$newAcctType = $row['acctType'];
+					
+					echo "<div id=\"page-wrapper\">
+					<aside id=\"nav-aside\" role=\"complementary\">
+						<nav id=\"nav-menu\" role=\"navigation\">
+							<ul>
+								<li><a href=\"myaccount.php\">Manage Account</a></li>";
+								//not working
+								//if($newAcctType == "truck"){
+									//echo "<li><a href=\"truckaccount.php\">Truck Account</a></li>";
+								//}
+					echo		"<li class=\"active\"><a href=\"favorites.php?remove=\">Favorites</a></li>
+							</ul>
+						</nav>
+					</aside>
+					<h1>Favorites</h1>
+					<div class=\"form-wrapper\">
+						<table border = 0>
+							<div class=\"container\">
+								<tr>
+									<th></th>
+									<th>Truck Name</th>
+									<th></th>
+								</tr>
+							</div>";
 					while ($row = mysqli_fetch_assoc($result))
 					{
 						echo "<tr>
@@ -57,7 +77,8 @@
 						</tr>
 						";
 					}
-					echo "</table>";
+					echo "</table>
+					</div>";
 				}
 				
 				mysqli_close($connect);   // close the connection
@@ -67,7 +88,8 @@
 				echo "<script>window.location.replace(\"login.php\");</script>";
 			}
 		?>
-		<a href="myaccount.php">Return to Account</a>
+		</div>
 	</body>
 </html>
+
 
