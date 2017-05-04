@@ -22,7 +22,7 @@
 */
 
 #nav-bar ul li .active {
-	background-color: red; /* change */
+	background-color: #32CD32; /* change */
 }
 
 #nav-bar ul li a {
@@ -35,7 +35,8 @@
 }
 
 #nav-bar ul li a:hover {
-    background-color: #111; /* change */
+    background-color: #ff7f50; /* change */
+	color: white;
 }
 
 #nav-aside{
@@ -67,5 +68,8 @@
 }
 
 #nav-aside #nav-menu ul li a:hover{
-	background-color: #111;
+	background-color: #ff7f50;
+}
+#nav-aside #nav-menu ul .active{
+	background-color: #FF7F50;
 }
